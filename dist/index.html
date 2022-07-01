@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test work</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <main class="container">
+      <div class="main__wrapper">
+        <h2 class="main__title" data-main-tab="main__section_presentation">
+          Представление
+        </h2>
+        <h2 class="main__title" data-main-tab="main__section_success">
+          Дозвон, успешно
+        </h2>
+        <h2 class="main__title" data-main-tab="main__section_denied">
+          Дозвон, отказ
+        </h2>
+        <h2 class="main__title" data-main-tab="main__section_no-answer">
+          Недозвон
+        </h2>
+        <h2 class="main__title" data-main-tab="main__section_re-call">
+          Перезвон
+        </h2>
+        <h2 class="main__title" data-main-tab="main__section_error">
+          Ошибка телефонии
+        </h2>
+      </div>
+      <div class="content-wrapper">
+        <section class="main__section_presentation main__section">
+          <table class="sript__wrapper">
+            <thead>
+              <tr>
+                <th>Тема</th>
+                <th>Фраза</th>
+                <th>Ответ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="step step__1">
+                <td></td>
+                <td>
+                  <p>Удалось дозвониться ?</p>
+                </td>
+                <td>
+                  <input
+                    id="step__1__btn_yes"
+                    type="radio"
+                    name="step__1"
+                    class="step__btn"
+                    value="step__2"
+                  />
+                  <label for="step__1__btn_yes">Да</label>
+                  <input
+                    id="step__1__btn_no"
+                    type="radio"
+                    name="step__1"
+                    class="step__btn"
+                    value="step__11"
+                  />
+                  <label for="step__1__btn_no">Нет</label>
+                </td>
+              </tr>
+              <tr class="step step__2">
+                <td></td>
+                <td>
+                  <p>
+                    Здравствуйте, меня зовут
+                    <span class="employee-name">(Ваше имя)</span>, я представляю
+                    Тинькофф. Я разговариваю с
+                    <span class="client-name">(ИО клиента)</span> ?
+                  </p>
+                </td>
+                <td>
+                  <input
+                    id="step__2__btn_yes"
+                    type="radio"
+                    name="step__2"
+                    class="step__btn"
+                    value="step__3"
+                  />
+                  <label for="step__2__btn_yes">Да</label>
+                  <input
+                    id="step__2__btn_no"
+                    type="radio"
+                    name="step__2"
+                    class="step__btn"
+                    value="step__12"
+                  />
+                  <label for="step__2__btn_no">Нет</label>
+                </td>
+              </tr>
+              <tr class="step step__3">
+                <td></td>
+                <td>
+                  <p>
+                    Очень приятно,
+                    <span class="client-name">(ИО клиента)</span>. Вы готовы
+                    уделить мне 2-3 минуты Вашего внимания и ответить на пару
+                    вопросов?
+                  </p>
+                </td>
+                <td>
+                  <input
+                    id="step__3__btn_yes"
+                    type="radio"
+                    name="step__3"
+                    class="step__btn"
+                    value="step__4"
+                  />
+                  <label for="step__3__btn_yes">Да</label>
+                  <input
+                    id="step__3__btn_no"
+                    type="radio"
+                    name="step__3"
+                    class="step__btn"
+                    value="step__14"
+                  />
+                  <label for="step__3__btn_no">Нет</label>
+                </td>
+              </tr>
+              <tr class="step step__4">
+                <td></td>
+                <td>
+                  <p>
+                    <span class="client-name">(ИО клиента)</span>, спасибо, что
+                    вы являетесь нашим клиентом. Позвольте сообщить, что мы
+                    подключаем Клиентам особую программу страхования, которая
+                    обеспечит Вам надежную финансовую защиту при потере
+                    трудоспособности в результате несчастного случая, а также от
+                    потери работы. Скажите, вы готовы защитить себя от
+                    непредвиденных жизненных ситуаций?
+                  </p>
+                </td>
+                <td>
+                  <input
+                    id="step__4__btn_yes"
+                    type="radio"
+                    name="step__4"
+                    class="step__btn"
+                    value="step__5"
+                  />
+                  <label for="step__4__btn_yes">Да</label>
+                  <input
+                    id="step__4__btn_no"
+                    type="radio"
+                    name="step__4"
+                    class="step__btn"
+                    value="step__6"
+                  />
+                  <label for="step__4__btn_no">Нет</label>
+                </td>
+              </tr>
+              <tr class="step step__5">
+                <td></td>
+                <td>
+                  <p>
+                    <span class="client-name">(ИО клиента)</span>, плата за
+                    услугу составляет всего 0.89% от суммы задолженности, на
+                    момент формирования счет-выписки. Например, в случае наличия
+                    задолженности в 1000 рублей плата за программу будет
+                    составлять всего 8 рублей 90 копеек в месяц. При этом, в
+                    случае, если задолженность отсутствует, то плата за
+                    программу не взимается. Согласитесь, это выгодное
+                    предложение?
+                  </p>
+                </td>
+                <td>
+                  <input
+                    id="step__5__btn_yes"
+                    type="radio"
+                    name="step__5"
+                    class="step__btn"
+                    value="step__7"
+                  />
+                  <label for="step__5__btn_yes">Да</label>
+                  <input
+                    id="step__5__btn_no"
+                    type="radio"
+                    name="step__5"
+                    class="step__btn"
+                    value="step__6"
+                  />
+                  <label for="step__5__btn_no">Нет</label>
+                </td>
+              </tr>
+
+              <tr class="step step__7">
+                <td></td>
+                <td>
+                  <p>
+                    Обращаю ваше внимание на то, что участниками программы не
+                    могут быть лица, старше 75 лет и страдающие психическими
+                    заболеваниями. С этими условиями согласны?
+                  </p>
+                </td>
+                <td>
+                  <input
+                    id="step__7__btn_yes"
+                    type="radio"
+                    name="step__7"
+                    class="step__btn"
+                    value="step__8"
+                  />
+                  <label for="step__7__btn_yes">Да</label>
+                  <input
+                    id="step__7__btn_no"
+                    type="radio"
+                    name="step__7"
+                    class="step__btn"
+                    value="step__6"
+                  />
+                  <label for="step__7__btn_no">Нет</label>
+                </td>
+              </tr>
+              <tr class="step step__8">
+                <td></td>
+                <td>
+                  <p>
+                    В таком случае вы будете застрахованы от рисков получения
+                    инвалидности 1,2 группы в результате НС, ухода из жизни в
+                    результате НС, а так же от потери работы. Инвалидности в
+                    результате болезни в покрытие не входит.
+                  </p>
+                  <p>Скажите, Вы согласны стать участником этой программы?</p>
+                </td>
+                <td>
+                  <input
+                    id="step__8__btn_yes"
+                    type="radio"
+                    name="step__8"
+                    class="step__btn"
+                    value="step__9"
+                  />
+                  <label for="step__8__btn_yes">Да</label>
+                  <input
+                    id="step__8__btn_no"
+                    type="radio"
+                    name="step__8"
+                    class="step__btn"
+                    value="step__6"
+                  />
+                  <label for="step__8__btn_no">Нет</label>
+                </td>
+              </tr>
+              <tr class="step step__9">
+                <td></td>
+                <td>
+                  <p>
+                    Плата за страхование будет списываться с вашей карты
+                    ежемесячно. Программа начнет действовать с момента
+                    формирования следующией счет-выписки. Всего доброго, до
+                    свидания
+                  </p>
+                </td>
+                <td>
+                  <input
+                    id="step__9__btn_yes"
+                    type="radio"
+                    name="step__9"
+                    class="step__btn"
+                    value="step__10"
+                  />
+                  <label for="step__9__btn_yes">Согласен</label>
+                  <input
+                    id="step__9__btn_no"
+                    type="radio"
+                    name="step__9"
+                    class="step__btn"
+                    value="step__6"
+                  />
+                  <label for="step__9__btn_no">Отказ</label>
+                </td>
+              </tr>
+              <tr class="step step__10">
+                <td></td>
+                <td>
+                  <p>Перейти в Дозвон-Успешно</p>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="step step__6">
+                <td></td>
+                <td>
+                  <p>
+                    <span class="client-name">(ИО клиента)</span>, Благодарю вас
+                    за уделенное время. Если возникнет желание подключить услугу
+                    страхования жизни, можете это сделать в мобильном приложении
+                    или на сайте <a href="www.tinkoff.ru">www.tinkoff.ru</a>
+                  </p>
+                  <p>Перейди во вкладку Отказ</p>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="step step__11">
+                <td></td>
+                <td>
+                  <p>Перейти в раздел недозвон.</p>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="step step__12">
+                <td></td>
+                <td>
+                  <p>
+                    Скажите, вы знакомы с
+                    <span class="client-name">(ИО клиента)</span>
+                  </p>
+                </td>
+                <td>
+                  <input
+                    id="step__12__btn_yes"
+                    type="radio"
+                    name="step__12"
+                    class="step__btn"
+                    value="step__14"
+                  />
+                  <label for="step__12__btn_yes">Да</label>
+                  <input
+                    id="step__12__btn_no"
+                    type="radio"
+                    name="step__12"
+                    class="step__btn"
+                    value="step__13"
+                  />
+                  <label for="step__12__btn_no">Нет</label>
+                </td>
+              </tr>
+              <tr class="step step__13">
+                <td></td>
+                <td>
+                  <p>Приношу извинения. Всего доброго!</p>
+                  <p>Перейти во вкладку Отказ.</p>
+                </td>
+                <td></td>
+              </tr>
+              <tr class="step step__14">
+                <td></td>
+                <td>
+                  <p>
+                    Подскажите, когда можно будет перезвонить, чтобы поговорить
+                    с
+                    <span class="client-name">(ИО клиента)</span>
+                  </p>
+
+                  <p>Перейти во вкладку Перезвон</p>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="main__section main__section_success">
+          <div class="success__inputs">
+            <div>
+              <input
+                name="success__inputs"
+                id="success__input_2"
+                type="radio"
+                checked
+              />
+              <label for="success__input_2"> Подключение ПЛАТНОЙ услуги </label>
+            </div>
+            <div>
+              <input
+                name="success__inputs"
+                id="success__input_1"
+                type="radio"
+              />
+              <label for="success__input_1">
+                Подключение БЕСПЛАТНОЙ услуги
+              </label>
+            </div>
+          </div>
+          <button class="main__btn main__btn_success">
+            Завершить работу с заданием
+          </button>
+        </section>
+        <section class="main__section main__section_denied">
+          <div class="denied__wrapper">
+            <div class="denied__inputs">
+              <div>
+                <input
+                  id="denied__input_1"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_1">Перезвонит самостоятельно</label>
+              </div>
+              <div>
+                <input
+                  id="denied__input_2"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_2">Не звонить</label>
+              </div>
+              <div>
+                <input
+                  id="denied__input_3"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_3">Не устраивают условия</label>
+              </div>
+              <div>
+                <input
+                  id="denied__input_4"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_4">Не устраивает цена</label>
+              </div>
+              <div>
+                <input
+                  id="denied__input_5"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_5">Уже застрахован</label>
+              </div>
+              <div>
+                <input
+                  id="denied__input_6"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_6">Не доверяет компании</label>
+              </div>
+              <div>
+                <input
+                  id="denied__input_7"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_7"
+                  >Не подходит под требования программы</label
+                >
+              </div>
+              <div>
+                <input
+                  id="denied__input_8"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_8">Отказался от услуги</label>
+              </div>
+              <div>
+                <input
+                  id="denied__input_9"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_9"
+                  >Номер не принадлежит клиенту</label
+                >
+              </div>
+              <div>
+                <input
+                  id="denied__input_10"
+                  type="radio"
+                  name="denied__inputs"
+                />
+                <label for="denied__input_10">Другая причина</label>
+              </div>
+            </div>
+            <div class="castom__comment">
+              <label for="denied__comment">Комментарий:</label>
+
+              <textarea
+                name="denied__comment"
+                id="denied__comment"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <hr />
+          <button class="main__btn main__btn_denied">
+            Завершить работу с заданием
+          </button>
+        </section>
+        <section class="main__section main__section_no-answer">
+          <div class="no-answer__wrapper">
+            <div class="no-answer__inputs">
+              <div>
+                <input
+                  id="no-answer__input_1"
+                  name="no-answer__inputs"
+                  type="radio"
+                  checked
+                />
+                <label for="no-answer__input_1">Клиент не отвечает</label>
+              </div>
+              <div>
+                <input
+                  id="no-answer__input_2"
+                  name="no-answer__inputs"
+                  type="radio"
+                />
+                <label for="no-answer__input_2">Телефон не существует</label>
+              </div>
+              <div>
+                <input
+                  id="no-answer__input_3"
+                  name="no-answer__inputs"
+                  type="radio"
+                />
+                <label for="no-answer__input_3">Занято</label>
+              </div>
+              <div>
+                <input
+                  id="no-answer__input_4"
+                  name="no-answer__inputs"
+                  type="radio"
+                />
+                <label for="no-answer__input_4">Клиент сбрасывает вызов</label>
+              </div>
+              <div>
+                <input
+                  id="no-answer__input_5"
+                  name="no-answer__inputs"
+                  type="radio"
+                />
+                <label for="no-answer__input_5"
+                  >Телефон абонента выключен</label
+                >
+              </div>
+            </div>
+            <div class="castom__comment">
+              <label for="no-answer__comment">Комментарий:</label>
+              <textarea
+                name="no-answer__comment"
+                id="no-answer__comment"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <button class="main__btn main__btn_no-answer">
+            Завершить работу с заданием
+          </button>
+        </section>
+        <section class="main__section main__section_re-call">
+          <div class="re-call__wrapper">
+            <div class="re-call__info">
+              <div>
+                <div class="re-call__inputs">
+                  <div>
+                    <input
+                      type="radio"
+                      id="re-call__input_1"
+                      name="re-call__inputs"
+                      checked
+                    />
+                    <label for="re-call__input_1">Звонок сорвался</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="re-call__input_2"
+                      name="re-call__inputs"
+                    />
+                    <label for="re-call__input_2">Нет требуемых данных</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="re-call__input_3"
+                      name="re-call__inputs"
+                    />
+                    <label for="re-call__input_3"
+                      >По просьбе клиента/3-го лица</label
+                    >
+                  </div>
+                </div>
+                <div class="re-call__inputs re-call__inputs_date">
+                  <div>
+                    <input checked id="re-call__inputs_check" type="checkbox" />
+                    <label for="re-call__inputs_check"
+                      >Время перезвона выбрано</label
+                    >
+                  </div>
+                  <input
+                    placeholder="ДД.ММ.ГГГГ ЧЧ:ММ"
+                    class="re-call__input_date"
+                    type="text"
+                    name="re-call__date"
+                  />
+                </div>
+              </div>
+              <div class="castom__comment re-call__comment">
+                <label for="re-call__comment">Комментарий:</label>
+                <textarea
+                  name="re-call__comment"
+                  id="re-call__comment"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="main__btn main__btn_re-call">
+            Завершить работу с заданием
+          </button>
+        </section>
+        <section class="main__section main__section_error">
+          <div class="castom__comment error__comment">
+            <label for="error__comment">Комментарий:</label>
+            <textarea
+              name="error__comment"
+              id="error__comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="main__btn main__btn_error">
+            Завершить работу с заданием
+          </button>
+        </section>
+      </div>
+    </main>
+    <form class="modal__form">
+      <div class="modal__input__wrapper">
+        <label for="modal__input_emloyee-name">Введите свое имя:</label>
+        <input
+          id="modal__input_emloyee-name"
+          class="modal__input"
+          type="text"
+          name="employee-name"
+          placeholder="..."
+        />
+        <label for="modal__input_client-name">Введите имя и отчество клиента:</label>
+        <input
+          id="modal__input_client-name"
+          class="modal__input"
+          type="text"
+          name="client-name"
+          placeholder="..."
+        />
+        <input class="modal__ btn main__btn" type="submit" value="Сохранить" />
+      </div>
+    </form>
+  </body>
+</html>
